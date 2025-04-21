@@ -1,7 +1,7 @@
 package Payment;
 
 public class CreditCard extends Payment {
-  public void makePayment() {
+  public void makePayment(double price) {
     
   }
 }

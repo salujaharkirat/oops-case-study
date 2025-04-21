@@ -14,5 +14,5 @@ public abstract class Payment {
   private String timestamp;
   private PaymentStatus status;
 
-  public abstract void makePayment();
+  public abstract void makePayment(double price);
 }

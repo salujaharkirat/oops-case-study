@@ -37,4 +37,16 @@ public class ParkingTicket {
   public ParkingTicket getTicket() {
     return this;
   }
+  
+  public Payment getPayment() {
+    return this.payment;
+  }
+
+  public Date getTimeStamp () {
+    return this.timestamp;
+  }
+
+  public Date getExitAt () {
+    return this.exitAt;
+  }
 }

@@ -1,4 +1,6 @@
+import Entrance.Entrance;
 import ParkingLot.ParkingLot;
+import ParkingTicket.ParkingTicket;
 import Payment.Payment;
 import Payment.PaymentFactory;
 import Vehicle.Vehicle;
@@ -9,7 +11,7 @@ public class App {
         ParkingLot parkingLot = ParkingLot.getInstance();
         Vehicle vehicle = VehicleFactory.getVehicle("CAR");
         Payment payment = PaymentFactory.getPayment("CASH");
-        parkingLot.getParkingTicket(vehicle, payment);
-        System.out.println("Hello, World!");
+        ParkingTicket parkingTicket = new Entrance(1, parkingLot).getTicket(vehicle, payment);
+        
     }
 }
